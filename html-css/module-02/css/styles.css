@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.page {
+  padding-top: 50px;
+}
+
+.wrapper {
+  width: 480px;
+  margin: auto;
+}
+
+.article {
+  padding: 20px;
+  color: #424242;
+  box-shadow: 0 0 7px 7px rgba(31, 31, 31, 0.5);
+}
+
+.article h2 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  text-transform: uppercase;
+  /*подключил начертание*/
+  color: #000080;
+  font-style: italic;
+}
+
+.article h6 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #000080;
+}
+
+.article p {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 15px;
+}
