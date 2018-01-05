@@ -4,10 +4,9 @@
   margin: 0;
 }
 body {
-  min-height: 10vh;
-  font-size: 16px;
+  min-height: 100vh;
+  font-size: 12px;
   font-family: "Pathway Gothic One", sans-serif;
-  /* background-image: url(../images/page-bg.jpeg); */
   background-image: url(../images/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,61 +16,92 @@ body {
 
 .page {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .wrapper {
   width: 480px;
   margin: auto;
-  margin-top: 250px;
-  margin-bottom: 500px;
-}
-
-.article {
-  padding: 20px;
   background-color: white;
 }
 
+.article {
+  padding: 65px 38px 20px 33px;
+}
+
 .article h2 {
-  margin-bottom: 25px;
-  margin-top: 25px;
+  margin-bottom: 33px;
   font-size: 25px;
   text-transform: uppercase;
-  color: #000080;
+  color: #263555;
 }
 .article img {
   width: 100%;
 }
 
 .article h5 {
-  margin-top: 30px;
-  font-size: 15px;
-  color: #000080;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #263555;
 }
 .article p {
-  margin-bottom: 50px;
-  margin-top: 20px;
-  font-size: 15px;
+  margin-top: 25px;
+  font-size: 12px;
 }
-.section {
-  border-top: 1px solid #dcdcdc;
+*.aside {
+  padding: 50px 125px 20px 33px;
 }
-.section h2 {
-  margin-top: 50px;
-}
-.aside {
+.aside h2 {
   margin-bottom: 30px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #263555;
+}
+.aside li {
+	list-style-type: none;
 }
 .aside h5 {
   margin-bottom: 20px;
+  font-size: 14px;
+  color: #263555;
+	
+}
+.aside p {
+	margin-bottom: 30px;
+}
+
+.section {
+  border-top: 1px solid #dcdcdc;
+  margin-left: 36px;
+  margin-right: 36px;
+  padding-top: 53px;
+  padding-bottom: 44px;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #263555;
+}
+.section h5 {
+  margin-bottom: 25px;
+  font-size: 14px;
+  color: #263555;
+}
+.section p {
+  margin-bottom: 40px;
+  font-size: 12px;
 }
 .list {
+  font-size: 14px;
+  font-weight: bold;
+  color: #263555;
+  list-style-type: none;	
   column-count: 2;
-  margin-left: 30px;
-  margin-bottom: 100px;
+  text-align: center;
 }
 .list li {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #000080;
-  list-style-type: none;
+  margin-bottom: 25px;
+  
 }
