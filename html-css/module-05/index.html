@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Module-05-HW-05</title>
+  <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <a href="#" target="_blank" rel="noopener" class="logo">journey</a>
+      <nav>
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#">home</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="sub-sign">abaut</a>
+            <ul class="submenu">
+
+              <li class="submenu__item">
+                <a href="#">agency</a>
+              </li>
+              <li class="submenu__item">
+                <a href="#">news</a>
+              </li>
+              <li class="submenu__item">
+                <a href="#">team</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="gallery" href="#">gallery</a>
+          </li>
+
+          <li class="menu__item">
+            <a class="tours" href="#">tours</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">blog</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section">
+      <div class="carousel">
+
+        <div>
+          <img src="https://images/Layer 6.png" alt="Fly">
+        </div>
+        <div>
+          <img src="https://images.pexels.com/photos/433617/pexels-photo-433617.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="alt">
+        </div>
+        <div>
+          <img src="https://images.pexels.com/photos/815368/pexels-photo-815368.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="alt">
+        </div>
+        <div>
+          <img src="https://images.pexels.com/photos/547557/pexels-photo-547557.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="alt">
+        </div>
+
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('.carousel').slick({
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow: '<button class="slick-prev"></button>',
+            nextArrow: '<button class="slick-next"></button>'
+          });
+        });
+      </script>
+    </section>
+    <article class="article">
+      <h1>top destinations</h1>
+      <ul class="gallery clearfix">
+        <li class="card">
+          <img src="https://images.pexels.com/photos/235805/pexels-photo-235805.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+        </li>
+        <li class="card">
+          <img src="https://images.pexels.com/photos/235805/pexels-photo-235805.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+        </li>
+        <li class="card">
+          <img src="https://images.pexels.com/photos/235805/pexels-photo-235805.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb" alt="">
+        </li>
+      </ul>
+    </article>
+  </div>
+
+</body>
+
+</html>

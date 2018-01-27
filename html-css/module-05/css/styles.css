@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  font-size: 28px;
+  font-family: "Pathway Gothic One", sans-serif;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+.wrapper {
+  width: 1000px;
+  margin: auto;
+  /* background-color: #ffffff;*/
+  line-height: 25px;
+}
+.logo {
+  display: inline-block;
+  width: 138px;
+  height: 138px;
+  background-color: #ffffff;
+  font-family: "Pathway Gothic One", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #263555;
+  text-align: center;
+  line-height: 138px;
+  border-radius: 50%;
+  vertical-align: middle;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+}
+.header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.menu {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.menu a {
+  padding: 5px;
+  text-transform: uppercase;
+  margin-left: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #263555;
+}
+
+.menu {
+  width: 100%;
+  height: 60px;
+  box-sizing: border-box;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.menu__item {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+.menu__item:hover {
+  color: #263555;
+}
+
+.menu__item > a,
+.submenu__item > a {
+  display: inline-block;
+  height: 40px;
+  color: var(--accent-color);
+  text-decoration: none;
+  line-height: 40px;
+}
+
+.submenu__item > a {
+  width: 123px;
+  color: #6b7488;
+}
+.menu__item > a {
+  width: 95px;
+}
+
+.submenu {
+  /* делаем невидимым .submenu */
+  display: none;
+  /* при появлении .submenu окажется поверх других элементов */
+  position: absolute;
+  left: -25px;
+  /* необходимо перекрыть border  .menu  */
+  top: 40px;
+  list-style: none;
+  background: #ffffff;
+  padding: 10px 5px;
+}
+
+/* делаем .submenu видимым */
+
+.menu__item:hover > .submenu {
+  display: block;
+  background: #ffffff;
+}
+
+.submenu__item {
+  margin-top: 20px;
+  text-align: center;
+}
+.submenu__item > a:hover {
+  color: #263555;
+}
+html {
+  box-sizing: border-box;
+}
+.section {
+  margin: auto;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 50px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel {
+  margin: auto;
+  
+}
+
+.slick-arrow {
+  border: 0;
+  position: absolute;
+  height: 90px;
+  width: 45px;
+  z-index: 10;
+  background-color: #38afe5;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.slick-arrow:hover {
+  background-color: #ffffff;
+  color: #263555;
+}
+
+.slick-prev {
+  bottom: 100px;
+  left: 35px;
+  border-radius: 45px 0px 00px 45px;
+  font-size: 20px;
+}
+.slick-prev::before {
+  content: "\2190";
+  margin-left: 20px;
+}
+.slick-next {
+  bottom: 100px;
+  left: 80px;
+  border-radius: 00px 45px 45px 00px;
+  font-size: 20px;
+}
+.slick-next::before {
+  content: "\2192";
+  margin-right: 20px;
+}
+
+img {
+  display: block;
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+.article {
+  background-color: #ffffff;
+  padding: 50px;
+  
+  
+}
+.article h1 {
+  font-family: "Pathway Gothic One", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #263555;
+  text-align: left;
+  line-height: 100px;
+}
+.gallery {
+  list-style: none;
+  padding: 10px;
+  
+}
+
+.gallery li {
+  
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  
+}
+
+.gallery li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.gallery li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.card {
+  font-family: 'Lato', sans-serif;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 271px;
+  object-fit: cover;
+}
