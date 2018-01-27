@@ -244,3 +244,13 @@ img {
   height: 271px;
   object-fit: cover;
 }
+.article i {
+  display: block;
+  margin-left: auto;
+  width: 50px;
+  height: 50px;
+  background-image: url(https://image.flaticon.com/icons/svg/189/189671.svg);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
