@@ -1,0 +1,340 @@
+* * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: "Pathway Gothic One", sans-serif;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/*-----HEADER-----*/
+.header {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.menu {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 26px;
+  list-style: none;
+}
+
+.menu-item:last-child {
+  margin-right: 0px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-item:nth-child(3) {
+  margin-right: 250px;
+}
+
+.menu-item a:hover {
+  color: #263555;
+  transition-duration: 0.2s;
+}
+
+.menu-item:hover > .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  font-size: 17px;
+  background-color: #fff;
+  list-style: none;
+}
+
+.submenu-item a {
+  color: #6b7488;
+  margin: 2px;
+}
+
+.logo {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  border-radius: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #263555;
+}
+/*-----MAIN-----*/
+/*-----TOP PART-----*/
+.wrapper {
+  width: 1000px;
+  margin: auto;
+  padding: 100px 37px 40px 37px;
+  background-color: #fff;
+}
+
+.top-part,
+.bottom-part {
+  display: flex;
+}
+
+.agancy-profile,
+.our-priciples {
+  flex-basis: 30%;
+}
+
+.agancy-profile,
+.what-we-offer {
+  color: #4e5050;
+  margin-right: calc(6% - 4px);
+}
+
+.top-part {
+  margin-bottom: 50px;
+}
+
+.bottom-part {
+  border-top: 1px solid #dedbdb;
+  padding-top: 50px;
+  color: #4e5050;
+}
+
+h2 {
+  color: #263555;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+.agancy-profile {
+  flex-grow: 2;
+}
+
+.subtitle {
+  color: #263555;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+img {
+  margin-bottom: 25px;
+  margin-right: 25px;
+  float: left;
+  width: 350px;
+}
+
+.list-item {
+  display: flex;
+}
+
+.our-priciples {
+  counter-reset: our-priciples;
+}
+
+.list-item::before {
+  counter-increment: our-priciples;
+  content: counter(our-priciples);
+  flex-basis: 30px;
+  flex-shrink: 0;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #38afe5;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+}
+
+.box {
+  vertical-align: top;
+}
+
+.list h3 {
+  color: #263555;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.list p:last-child {
+  margin-bottom: 0px;
+}
+
+.list li:last-child {
+  margin-bottom: 0px;
+}
+
+.list p {
+  color: #4e5050;
+}
+
+/*-----BOTTOM PART-----*/
+
+.what-we-offer,
+.quote {
+  flex-basis: 30%;
+}
+
+.what-we-offer {
+  flex-grow: 2;
+}
+
+.article p {
+  margin-bottom: 10px;
+}
+
+.quote p {
+  color: #263555;
+  border: 1px solid #dedbdb;
+  background-color: #fcfafa;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.quote h3 {
+  color: #263555;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.quote h4 {
+  color: #4e5050;
+  font-size: 15px;
+  text-align: center;
+}
+
+.quote p:before {
+  content: "  " "\0022" " ";
+}
+
+.quote p:after {
+  content: " " "\0022";
+}
+
+.columns {
+  column-count: 2;
+  color: #263555;
+}
+
+.columns li:before {
+  content: "\2192";
+  color: #38afe5;
+  margin-right: 5px;
+}
+
+.columns li:nth-child(5) {
+  margin: 0;
+}
+
+.columns li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+/*-----NAV SECTION-----*/
+.nav-section {
+  background-color: #30455b;
+  width: 1000px;
+  margin: auto;
+  padding: 40px 35px 20px 35px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.menu-help {
+  flex-basis: 75%;
+  padding-left: 50px;
+}
+.menu-contacts {
+  flex-basis: 15%;
+}
+.menu-help ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.menu-help li {
+  flex-basis: 33%;
+}
+.menu-help a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu-help a:hover {
+  color:#6b7488;
+}
+.menu-contacts {
+  font-size: 18px;
+}
+.menu-contacts h2 {
+  font-size: 19px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.menu-contacts ul {
+  text-transform: none;
+}
+.menu-contacts li {
+  list-style: none;
+  color: #fff;
+}
+.menu-contacts a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: none;
+}
+.menu-contacts a:hover {
+  color:#6b7488;
+}
+/*-----FOOTER-----*/
+.social-icons ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  list-style: none;
+}
+.social-icons li {
+  margin-right: 15px;
+}
+.social-icons li:last-child {
+  margin-right: 0px;
+}
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+.social-icons img:hover {
+  transform: scale(1.5);
+  transition-duration: 0.2s;
+}
+.footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+}
+
+

@@ -1,0 +1,4 @@
+background-image: url(https://image.ibb.co/dutLyb/bg.png);
+color: #263555;
+color: #6b7488;
+263555

@@ -1,0 +1,212 @@
+* * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: "Pathway Gothic One", sans-serif;
+  background-image: url(../images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/*-----HEADER-----*/
+.header {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.menu {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 26px;
+  list-style: none;
+}
+
+.menu-item:last-child {
+  margin-right: 0px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-item:nth-child(3) {
+  margin-right: 250px;
+}
+
+.menu-item a:hover {
+  color: #263555;
+  transition-duration: 0.2s;
+}
+
+.menu-item:hover > .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  font-size: 17px;
+  background-color: #fff;
+  list-style: none;
+}
+
+.submenu-item a {
+  color: #6b7488;
+  margin: 2px;
+}
+
+.logo {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #fff;
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
+  border-radius: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #263555;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: auto;
+  padding: 100px 37px 40px 37px;
+  background-color: #fff;
+}
+/*-----MAIN-----*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery li {
+  flex: 1 0 30%;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  position: relative;
+  list-style: none;
+}
+.gallery img {
+  display: block;
+}
+.gallery li:nth-child(3n-3) {
+  padding-right: 0px;
+}
+.gallery li:nth-child(3n-3) {
+  padding-right: 0px;
+}
+
+.gallery li:nth-child(n + 6) {
+  padding-bottom: 0px;
+}
+.section h2 {
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  color: #263555;
+  font-size: 25px;
+}
+/*-----NAV SECTION-----*/
+.nav-section {
+  background-color: #30455b;
+  width: 1000px;
+  margin: auto;
+  padding: 40px 35px 20px 35px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.menu-help {
+  flex-basis: 75%;
+  padding-left: 50px;
+}
+.menu-contacts {
+  flex-basis: 15%;
+}
+.menu-help ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.menu-help li {
+  flex-basis: 33%;
+}
+.menu-help a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu-help a:hover {
+  color: #6b7488;
+}
+.menu-contacts {
+  font-size: 18px;
+}
+.menu-contacts h2 {
+  font-size: 19px;
+  color: #fff;
+  margin-bottom: 0;
+}
+.menu-contacts ul {
+  text-transform: none;
+}
+.menu-contacts li {
+  list-style: none;
+  color: #fff;
+}
+.menu-contacts a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: none;
+}
+.menu-contacts a:hover {
+  color: #6b7488;
+}
+/*-----FOOTER-----*/
+.social-icons ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  list-style: none;
+}
+.social-icons li {
+  margin-right: 15px;
+}
+.social-icons li:last-child {
+  margin-right: 0px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+}
+.social-icons img:hover {
+  transform: scale(1.5);
+  transition-duration: 0.2s;
+}
+.footer p {
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+}
