@@ -1,0 +1,243 @@
+@import url("fonts.css");
+@import url("reset.css");
+@import url("variables.css");
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #282828;
+}
+/*-----MASTHEAD-----*/
+.masthead-wrapper {
+  margin: auto;
+  margin-top: 10rem;
+  max-width: 87.5rem;
+}
+
+.container {
+  margin: auto;
+  padding: 3.5rem;
+  background-color: #ffff;
+}
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: Lobster, serif;
+  font-weight: 400;
+  color: #fed136;
+  font-size: 1.625rem;
+}
+.logo:hover {
+  transform: scale(1.5);
+  transition-duration: 0.5s;
+}
+.nav {
+  display: flex;
+}
+.nav-item {
+  flex-direction: row;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  margin-right: 2.5rem;
+}
+.nav-item:last-child {
+  margin-right: 0;
+}
+.nav-item a {
+  color: var(--second-font-color);
+}
+.nav-item a:hover {
+  color: #fed136;
+}
+/*-----SERVICES-----*/
+.services-wrapper {
+  margin-top: 1.88rem;
+  max-width: 87.5rem;
+  margin: auto;
+}
+.services-header {
+  text-align: center;
+  margin-bottom: 5.31rem;
+}
+.services-header-title {
+  color: var(--second-font-color);
+  font-size: 2.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+.services-header-subtitle {
+  color: #777777;
+  font-size: 1rem;
+  font-family: Lobster;
+  font-weight: 400;
+}
+.services-item {
+  display: flex;
+  justify-content: space-between;
+}
+.services-card {
+  flex: 0 0 30%;
+  text-align: center;
+}
+.services-icon-basket {
+  display: inline-block;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-image: url("../images/Icon-Basket.png"),
+    url("../images/Circle-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 1.5625rem;
+}
+.services-icon-laptop {
+  display: inline-block;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-image: url("../images/Icon-Laptop.png"),
+    url("../images/Circle-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 1.5625rem;
+}
+.services-icon-locked {
+  display: inline-block;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-image: url("../images/Icon-Locked.png"),
+    url("../images/Circle-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 1.5625rem;
+}
+.services-name {
+  color: var(--second-font-color);
+  font-size: 1.125rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+.services-text {
+  color: #777777;
+  font-size: 0.875rem;
+  font-family: Roboto;
+  font-weight: 400;
+}
+/*-----CONTACT-----*/
+.contact-wrapper {
+  background-image: url("../images/Map.png"), url("../images/Backgraund.png");
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  background-position: right;
+  padding: 6rem 0;
+  max-width: 87.5rem;
+  margin: auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.06rem;
+}
+
+.section-header-title-contact {
+  color: var(--main-font-color);
+  font-size: 2.5rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+.section-header-subtitle {
+  color: #777777;
+  font-size: 1rem;
+  font-family: Lobster;
+  font-weight: 400;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-form-name,
+.contact-form-message {
+  flex-basis: 40%;
+}
+
+.contact-form-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.contact-form-name input {
+  margin-bottom: 1.25rem;
+  border-radius: 2px;
+  padding: 1.25rem;
+  width: 18.75rem;
+  border: 0;
+  outline: 0;
+}
+
+input::placeholder {
+  font-size: 0.875rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+
+.contact-form-name input:last-child {
+  margin-bottom: 0;
+}
+
+.contact-form-message {
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.contact-form-message textarea {
+  resize: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  padding: 0.625rem;
+  height: 11.125rem;
+  width: 18.75rem;
+  font-size: 0.875rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+}
+
+textarea::placeholder {
+  color: #bbbbbb;
+}
+
+.send {
+  flex: 0 0 30%;
+  border: 0.125rem solid #fed136;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-weight: 900;
+  font-size: 1.125rem;
+  color: var(--main-font-color);
+  background-color: var(--main-background-color);
+  padding: 1.5625rem 3.125rem;
+  border-radius: 3px;
+  display: block;
+  margin-top: 3rem;
+}
+
+.send:hover {
+  color: #777777;
+  transition-duration: 0.5s;
+}
