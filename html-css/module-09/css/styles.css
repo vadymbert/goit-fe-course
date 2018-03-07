@@ -1,0 +1,200 @@
+@import url("fonts.css");
+@import url("reset.css");
+@import url("variables.css");
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--main-font-color);
+}
+/*-----MASTHEAD-----*/
+.masthead-wrapper {
+  background-image: url("../img/bg-masthead.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: RGBA(0, 0, 0, 0.5);
+  min-height: 43.75rem;
+}
+
+.promo-container {
+  min-width: 20rem;
+  color: var(--main-font-color);
+  padding-top: 2.5rem;
+}
+.login {
+  text-align: center;
+}
+.login a {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  padding: 0.625rem 0.9375rem;
+}
+.sign-up {
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+.logo {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 7.5rem;
+}
+.promo {
+  text-align: center;
+}
+.promo-title {
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+.promo-subtitle {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+}
+.promo-btn {
+  color: var(--main-font-color);
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  background-color: var(--main-background-color);
+  border-radius: 20px;
+  padding: 0.94rem 3.13rem;
+}
+/*-----PARTNER WRAPPER-----*/
+.partner-section {
+  text-align: center;
+  color: var(--second-font-color);
+  padding-bottom: 2.5rem;
+}
+.partner-title {
+  font-size: 1.375rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+.partner-card {
+  flex-basis: 62.5%;
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+.partner-card:last-child {
+  margin: 0;
+}
+.partner-name {
+  font-size: 0.875rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+.partner-about {
+  font-size: 0.875rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.5;
+}
+.partner-img {
+  width: 7.5rem;
+  position: relative;
+  margin: auto;
+}
+.partner-photo {
+  max-width: 100%;
+  margin-bottom: 1.25rem;
+}
+.icon-Bradley,
+.icon-Heather,
+.icon-Lucas,
+.icon-Hunter {
+  border-radius: 50%;
+  border: 4px solid #fff;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  right: 5px;
+  bottom: 20%;
+}
+.icon-Bradley {
+  background-image: url("../img/icon-tv.png");
+  background-color: #ff4e50;
+}
+.icon-Heather {
+  background-image: url("../img/icon-tea.png");
+  background-color: #1cd7ad;
+}
+.icon-Lucas {
+  background-image: url("../img/icon-lab.png");
+  background-color: #ffa507;
+}
+.icon-Hunter {
+  background-image: url("../img/icon-plane.png");
+  background-color: #4e73db;
+}
+.partner-btn {
+  border: 2px solid #ff4e50;
+  border-radius: 20px;
+  color: #ff4e50;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.94rem 3.13rem;
+  margin-top: 1.88rem;
+}
+@media (min-width: 768px) {
+    .logo {
+      margin-top: 0;
+    }
+  
+    .card-container [class*="col-"]:not(:last-child) {
+      margin-bottom: 3.75rem;
+    }
+}
+@media (min-width: 768px) {
+  .container:last-child {
+    padding-top: 4.375rem;
+  }
+
+  .masthead-wrapper {
+    min-height: 43.75rem;
+  }
+
+  .promo-title {
+    margin-top: 10rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    font-size: 3.25rem;
+  }
+
+  .promo-subtitle {
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .promo-btn {
+    padding: 0.625rem 1.5rem;
+  }
+
+  .people-title {
+    margin-bottom: 2.5rem;
+  }
+
+  .pertner-btn {
+    padding: 0.625rem 1.5rem;
+  }
+}

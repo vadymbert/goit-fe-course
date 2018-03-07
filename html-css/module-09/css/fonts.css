@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Lobster";
+    src: url("../fonts/lobster/lobster-v20-latin-regular.woff") format('woff'),
+    url("../fonts/lobster/lobster-v20-latin-regular.woff") format('woff2');
+    font-weight: 700;
+    font-style: normal;
+  }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../montserrat/monserrat-v12-latin-800.woff") format('woff'),
+  url("../montserrat/monserrat-v12-latin-800.woff") format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../montserrat/monserrat-v12-latin-500.woff") format('woff'),
+  url("../montserrat/monserrat-v12-latin-500.woff") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../roboto/roboto-slab-v7-latin-700.woff") format('woff'),
+  url("../roboto/roboto-slab-v7-latin-700.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source";
+  src: url("../source/sourse-code-pro-v7-latin-700.woff") format('woff'),
+  url("../source/sourse-code-pro-v7-latin-700.woff2") format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
