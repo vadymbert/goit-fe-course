@@ -98,3 +98,6 @@ const cashierMango = new Cashier('Mango', products);
 const cashierKongo = new Cashier('Kongo', products);
 cashierMango.serve(orderMango);
 cashierKongo.serve(orderKongo);
+
+// https://github.com/vadymbert/goit-fe-course/blob/master/javascript/js-group-3-4/M-4/index.js
+// https://vadymbert.github.io/goit-fe-course/javascript/js-group-3-4/M-4/index.js
